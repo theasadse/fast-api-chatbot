@@ -14,6 +14,7 @@ STATIC_DIR = BASE_DIR / "static"
 
 load_dotenv()
 
+
 app = FastAPI(title="Small AI Chatbot")
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
