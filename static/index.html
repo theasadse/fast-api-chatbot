@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Small AI Chatbot</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="chat-card">
+      <div class="header">
+        <p class="eyebrow">FastAPI + OpenAI SDK</p>
+        <h1>Small AI Chatbot</h1>
+      </div>
+
+      <div id="messages" class="messages">
+        <div class="message assistant">
+          <span class="role">Assistant</span>
+          <p>Ask me anything.</p>
+        </div>
+      </div>
+
+      <form id="chat-form" class="composer">
+        <textarea id="message-input" name="message" rows="3" placeholder="Type your message..." required></textarea>
+        <button id="send-button" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
